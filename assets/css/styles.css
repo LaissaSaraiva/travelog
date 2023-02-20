@@ -171,6 +171,7 @@ body {
   flex-wrap: wrap;
   gap: 21px;
   margin-top: 106px;
+  margin-bottom: 40px;
 }
 
 .traveling__cards {
@@ -202,7 +203,7 @@ body {
 /* Footer */
 
 .footer {
-  padding: 10px 0;
+  padding: 10px;
   background-color: rgb(7, 63, 53, 0.9);
 }
 
@@ -218,11 +219,95 @@ body {
   transition: all 0.9s;
 }
 
-.footer a:hover {
-}
+/* .footer a:hover {
+} */
 
 .footer a:link,
 a:visited {
   color: black;
   text-shadow: none;
+}
+
+/* Responsividade */
+
+.mobile-menu {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  display: none;
+}
+
+.mobile-menu img {
+  border-radius: 50%;
+  height: 40px;
+  width: auto;
+  padding: 5px;
+}
+
+@media (max-width: 1025px) {
+  .header__nav,
+  .traveling {
+    margin: 40px 100px 0;
+  }
+
+  .traveling__boxes ul {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+/* Tablets */
+
+@media (max-width: 769px) {
+  body {
+    background-position: center center;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .header__nav {
+    /* display: none; */
+    height: auto;
+    margin-left: 70px;
+    flex-wrap: nowrap;
+  }
+
+  .nav__left {
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__list,
+  .nav__right {
+    display: none;
+  }
+
+  .traveling {
+    margin: 40px 70px 0;
+  }
+}
+
+/* MObile  */
+
+@media (max-width: 640px) {
+  body {
+    background-size: cover;
+    background-position: 10%;
+  }
+
+  .header__nav,
+  .traveling {
+    margin: 40px 50px 0;
+  }
+
+  .traveling__description h1 {
+    font-size: 2.4rem;
+  }
+
+  .traveling__description p {
+    font-size: 1.7rem;
+  }
 }
