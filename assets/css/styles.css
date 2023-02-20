@@ -20,10 +20,10 @@ body {
   background-image: url("../imgs/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center right;
-  min-height: 200vh;
-  margin: 40px 150px;
-  position: relative;
+  background-position: center left;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
 }
 
 .text-shadow {
@@ -38,6 +38,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   height: 40px;
+  margin: 40px 150px 0;
 }
 
 .nav__left,
@@ -123,12 +124,13 @@ body {
 }
 
 /* Main - Traveling */
+.traveling {
+  margin: 40px 150px;
+}
 
 .traveling__description {
   max-width: 502px;
-  /* margin-left: 150px; */
   margin-top: 83px;
-
   display: flex;
   flex-direction: column;
   gap: 29px;
@@ -162,17 +164,12 @@ body {
 }
 /* Traveling Cards */
 
-.traveling__boxes {
-  position: relative;
-}
-
 .traveling__boxes ul {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 21px;
   margin-top: 106px;
-  position: absolute;
-  right: 0;
 }
 
 .traveling__cards {
@@ -204,9 +201,7 @@ body {
 /* Footer */
 
 .footer {
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
+  padding: 10px 0;
 }
 
 .footer div {
