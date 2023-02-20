@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url("../imgs/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  min-height: 200vh;
+  margin: 40px 150px;
+  position: relative;
+}
+
+.text-shadow {
+  color: #f2f2f2;
+  text-shadow: rgb(22, 21, 21) 1px 2px 2px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 40px;
+}
+
+.nav__left,
+.nav__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav__left img {
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  object-fit: cover;
+}
+
+.nav__left span {
+  font-size: 1.875rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav__list li {
+  font-size: 1.25rem;
+}
+
+.nav__input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: none;
+}
+
+.nav__input input {
+  width: 189px;
+  height: 40px;
+  border-radius: 63px;
+  background-color: black;
+  color: #f2f2f2;
+  padding: 0.5rem;
+  border: none;
+}
+
+.nav__input img {
+  position: absolute;
+  right: 10px;
+}
+
+.user {
+  background-color: black;
+  border-radius: 50%;
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+/* Main - Traveling */
+
+.traveling__description {
+  max-width: 502px;
+  /* margin-left: 150px; */
+  margin-top: 83px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.traveling__description h1 {
+  font-size: 4.063rem;
+}
+
+.traveling__description p {
+  font-size: 1.875rem;
+}
+
+.traveling__description button {
+  background: #eb5757;
+  border-radius: 34px;
+  border: none;
+  padding: 10px;
+  width: 213px;
+  height: 65px;
+  font-size: 1.875rem;
+  color: #ffffff;
+}
+
+/* Traveling Cards */
+
+.traveling__boxes {
+  position: relative;
+}
+
+.traveling__boxes ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  margin-top: 106px;
+  position: absolute;
+  right: 0;
+}
+
+.traveling__cards {
+  max-width: 293px;
+  color: black;
+
+  padding: 30px;
+  border-radius: 40px;
+  background: rgba(200, 192, 179, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.traveling__cards h2 {
+  font-size: 1.875rem;
+  margin-bottom: 25px;
+}
+
+.traveling__cards p {
+  font-size: 1.25rem;
+}
+
+/* Footer */
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+
+.footer div {
+  color: #f2f2f2;
+  text-shadow: rgb(22, 21, 21) 1px 1px 1px;
+  letter-spacing: 0.8px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.footer a:link,
+a:visited {
+  color: #073f35;
+  text-shadow: none;
+}
