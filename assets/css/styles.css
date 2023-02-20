@@ -48,6 +48,11 @@ body {
   gap: 1rem;
 }
 
+.nav__left,
+.nav__right:hover {
+  cursor: pointer;
+}
+
 .nav__left img {
   background-color: #f2f2f2;
   border-radius: 50%;
@@ -69,6 +74,14 @@ body {
 
 .nav__list li {
   font-size: 1.25rem;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.8s;
+}
+
+.nav__list li:hover {
+  cursor: pointer;
+  background-color: #073f35;
 }
 
 .nav__input {
@@ -84,13 +97,20 @@ body {
   border-radius: 63px;
   background-color: black;
   color: #f2f2f2;
-  padding: 0.5rem;
+  padding: 0.5rem 2.5rem 0.5rem 1.5rem;
   border: none;
+  transition: width 0.8s ease-in-out;
+}
+
+.nav__input input:focus {
+  width: 300px;
+  background-color: #073f35;
 }
 
 .nav__input img {
   position: absolute;
   right: 10px;
+  margin-left: 3px;
 }
 
 .user {
@@ -131,8 +151,15 @@ body {
   height: 65px;
   font-size: 1.875rem;
   color: #ffffff;
+  transition: 0.9s;
 }
 
+.traveling__description button:hover {
+  cursor: pointer;
+  background-color: rgba(235, 228, 87, 0.8);
+  box-shadow: 1px 2px 7px 7px;
+  text-shadow: rgb(22, 21, 21) 1px 2px 2px;
+}
 /* Traveling Cards */
 
 .traveling__boxes {
@@ -157,6 +184,12 @@ body {
   background: rgba(200, 192, 179, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: all 0.9s;
+}
+
+.traveling__cards:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .traveling__cards h2 {
@@ -182,6 +215,13 @@ body {
   letter-spacing: 0.8px;
   font-size: 1.1rem;
   text-align: center;
+}
+.footer a {
+  transition: all 0.9s;
+}
+
+.footer a:hover {
+  color: black;
 }
 
 .footer a:link,
