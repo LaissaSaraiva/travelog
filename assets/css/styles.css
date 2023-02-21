@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url("../imgs/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.text-shadow {
+  color: #f2f2f2;
+  text-shadow: rgb(22, 21, 21) 2px 2px 3px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 40px;
+  margin: 40px 150px 0; */
+  padding: 40px 150px 0;
+}
+
+.nav__left,
+.nav__logo,
+.nav__right,
+.nav__user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Nav Left */
+.nav__left {
+  justify-content: space-between;
+}
+
+.nav__logo,
+.nav__user:hover {
+  cursor: pointer;
+}
+
+.nav__logo img {
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  object-fit: cover;
+}
+
+.nav__logo span {
+  font-size: 1.875rem;
+}
+
+/* Nav Right */
+
+.nav__right {
+  justify-content: space-between;
+}
+
+.sair-mobile {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav__list li {
+  font-size: 1.25rem;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.8s;
+  white-space: nowrap;
+}
+
+.nav__list li:hover {
+  cursor: pointer;
+  background-color: #073f35;
+}
+
+.nav__input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav__input input {
+  width: 189px;
+  height: 40px;
+  border-radius: 63px;
+  background-color: black;
+  color: #f2f2f2;
+  padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+  border: none;
+  transition: width 0.8s ease-in-out;
+}
+
+.nav__input input:focus {
+  width: 250px;
+  background-color: #073f35;
+  outline-color: #073f35;
+}
+
+.nav__input img {
+  position: absolute;
+  right: 10px;
+  margin-left: 3px;
+}
+
+.user {
+  background-color: black;
+  border-radius: 50%;
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+/* Main - Traveling */
+.traveling {
+  padding: 40px 150px;
+}
+
+.traveling__description {
+  max-width: 502px;
+  margin-top: 83px;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.traveling__description h1 {
+  font-size: 4.063rem;
+}
+
+.traveling__description p {
+  font-size: 1.875rem;
+}
+
+.traveling__description button {
+  background: #eb5757;
+  border-radius: 34px;
+  border: none;
+  padding: 10px;
+  width: 213px;
+  height: 65px;
+  font-size: 1.875rem;
+  color: #ffffff;
+  transition: 0.9s;
+}
+
+.traveling__description button:hover {
+  cursor: pointer;
+  background-color: rgba(235, 228, 87, 0.8);
+  box-shadow: 1px 2px 7px 7px;
+  text-shadow: rgb(22, 21, 21) 1px 2px 2px;
+}
+/* Traveling Cards */
+
+.traveling__boxes ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 21px;
+  margin-top: 106px;
+  margin-bottom: 40px;
+}
+
+.traveling__cards {
+  max-width: 293px;
+  min-height: 200px;
+  color: black;
+  padding: 30px 25px;
+  border-radius: 40px;
+  background: rgba(200, 192, 179, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: all 0.9s;
+}
+
+.traveling__cards:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.traveling__cards h2 {
+  font-size: 1.875rem;
+  margin-bottom: 25px;
+}
+
+.traveling__cards p {
+  font-size: 1.25rem;
+}
+
+/* Footer */
+
+.footer {
+  padding: 10px;
+  background-color: rgb(7, 63, 53, 0.9);
+}
+
+.footer div {
+  color: #f2f2f2;
+  text-shadow: rgb(22, 21, 21) 1px 1px 1px;
+  letter-spacing: 0.8px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer a {
+  transition: all 0.9s;
+}
+
+.footer a:link,
+a:visited {
+  color: black;
+  text-shadow: none;
+}
+
+/* Responsividade */
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu img,
+.sair-mobile img {
+  display: inline;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  height: 40px;
+  width: auto;
+  padding: 5px;
+}
+
+@media (max-width: 1025px) {
+  .header__nav,
+  .traveling {
+    padding: 40px 100px 0;
+  }
+
+  .traveling__boxes ul {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+/* Tablets */
+
+@media (max-width: 769px) {
+  body {
+    background-position: center center;
+    position: relative;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .nav__list {
+    display: block;
+    text-align: center;
+  }
+
+  .nav__list li:hover {
+    font-size: 1.5rem;
+  }
+
+  .nav__left,
+  .sair-mobile,
+  .nav__list,
+  .nav__user {
+    width: 100%;
+  }
+
+  .nav__right {
+    visibility: hidden;
+    background-color: rgb(7, 63, 53, 1);
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 0px;
+    position: absolute;
+    height: 100vh;
+    right: 0px;
+    top: 0;
+    transition: 1s;
+    z-index: 10;
+    overflow-x: hidden;
+  }
+
+  .header__nav.text-shadow.active .nav__right {
+    visibility: visible;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .sair-mobile {
+    display: flex;
+    align-self: flex-end;
+    padding: 10px;
+  }
+
+  .nav__user {
+    justify-content: center;
+  }
+
+  .user {
+    display: none;
+  }
+  .nav__input input {
+    width: 20px;
+  }
+
+  .traveling {
+    padding: 40px 70px 0;
+  }
+}
+
+/* MObile  */
+
+@media (max-width: 640px) {
+  body {
+    background-size: cover;
+    background-position: 10%;
+  }
+
+  .header__nav,
+  .traveling {
+    padding: 40px 30px 0;
+  }
+
+  .traveling__description {
+    margin-top: 42px;
+  }
+
+  .traveling__description h1 {
+    font-size: 2.4rem;
+  }
+
+  .traveling__description p {
+    font-size: 1.7rem;
+  }
+}
