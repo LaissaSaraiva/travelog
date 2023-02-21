@@ -16,31 +16,44 @@
     <header>
       <nav class="header__nav text-shadow">
         <div class="nav__left">
-          <img src="./assets/imgs/airplane.png" alt="Ícone de um avião" />
-          <span>Travelog</span>
-        </div>
+          <div class="nav__logo">
+            <img src="./assets/imgs/airplane.png" alt="Ícone de um avião" />
+            <span>Travelog</span>
+          </div>
 
-        <div class="mobile-menu">
-          <img src="./assets/imgs/menu-hamburguer.png" alt="" />
+          <div class="mobile-menu">
+            <img id="menu" src="./assets/imgs/menu-hamburguer.png" alt="" />
+            <img src="./assets/imgs/user-mobile.png" alt="" />
+          </div>
         </div>
-
-        <ul class="nav__list">
-          <li>Home</li>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Contact Us</li>
-        </ul>
 
         <div class="nav__right">
-          <div class="nav__input">
-            <input type="text" />
-            <img src="./assets/imgs/search.png" alt="Ícone de busca" />
+          <div class="sair-mobile">
+            <img
+              id="menu-sair"
+              src="./assets/imgs/cancelar.png"
+              alt="Botão sair menu-mobile"
+            />
           </div>
-          <img
-            class="user"
-            src="./assets/imgs/user.png"
-            alt="Ícone de um usuário"
-          />
+
+          <ul class="nav__list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+          </ul>
+
+          <div class="nav__user">
+            <div class="nav__input">
+              <input type="text" />
+              <img src="./assets/imgs/search.png" alt="Ícone de busca" />
+            </div>
+            <img
+              class="user"
+              src="./assets/imgs/user.png"
+              alt="Ícone de um usuário"
+            />
+          </div>
         </div>
       </nav>
     </header>
@@ -86,5 +99,6 @@
         </p>
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
