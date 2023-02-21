@@ -36,8 +36,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
-  margin: 40px 150px 0;
+  /* height: 40px;
+  margin: 40px 150px 0; */
+  padding: 40px 150px 0;
 }
 
 .nav__left,
@@ -143,7 +144,7 @@ body {
 
 /* Main - Traveling */
 .traveling {
-  margin: 40px 150px;
+  padding: 40px 150px;
 }
 
 .traveling__description {
@@ -261,7 +262,7 @@ a:visited {
 @media (max-width: 1025px) {
   .header__nav,
   .traveling {
-    margin: 40px 100px 0;
+    padding: 40px 100px 0;
   }
 
   .traveling__boxes ul {
@@ -278,21 +279,24 @@ a:visited {
     position: relative;
   }
 
+  .header__nav {
+    flex-direction: column;
+    height: auto;
+  }
+
   .mobile-menu {
     display: flex;
     flex-direction: row;
     gap: 1rem;
   }
 
-  .header__nav {
-    height: auto;
-    margin-left: 70px;
-    flex-wrap: nowrap;
-  }
-
   .nav__list {
     display: block;
     text-align: center;
+  }
+
+  .nav__list li:hover {
+    font-size: 1.5rem;
   }
 
   .nav__left,
@@ -303,30 +307,31 @@ a:visited {
   }
 
   .nav__right {
+    visibility: hidden;
     background-color: rgb(7, 63, 53, 1);
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    width: 0px;
     position: absolute;
-    top: 60px;
-    right: 0;
-    bottom: 0;
+    height: 100vh;
+    right: 0px;
+    top: 0;
+    transition: 1s;
+    z-index: 10;
+    overflow-x: hidden;
+  }
+
+  .header__nav.text-shadow.active .nav__right {
+    visibility: visible;
     width: 100vw;
-    padding: 40px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .sair-mobile {
     display: flex;
     align-self: flex-end;
-  }
-
-  .nav__list li {
-    background-color: none;
-    border-radius: 0%;
-  }
-
-  .nav__list li:hover {
-    border-bottom: 2px solid #f2f2f2;
+    padding: 10px;
   }
 
   .nav__user {
@@ -341,7 +346,7 @@ a:visited {
   }
 
   .traveling {
-    margin: 40px 70px 0;
+    padding: 40px 70px 0;
   }
 }
 
@@ -355,7 +360,11 @@ a:visited {
 
   .header__nav,
   .traveling {
-    margin: 40px 20px 0;
+    padding: 40px 30px 0;
+  }
+
+  .traveling__description {
+    margin-top: 42px;
   }
 
   .traveling__description h1 {
